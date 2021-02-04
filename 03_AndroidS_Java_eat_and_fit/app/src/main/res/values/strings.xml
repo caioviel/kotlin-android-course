@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Eat \'n\' Fit</string>
+    <string name="btn_start">Começar 🍴🍴</string>
+    <string name="welcome">Bem-vindo ao Eat \'n\' Fit, a aplicação que irá te ajudar a comer bem para chegar ao seu peso ideal. Para começar, precisamos saber um pouco sobre você =)</string>
+    <string name="weight">Peso:</string>
+    <string name="height">Altura:</string>
+    <string name="idade">Idade:</string>
+    <string name="btn_calculator">Abrir Calculadora</string>
+    <string name="btn_results">Ver Resultado</string>
+    <string name="input_info">Entre com as informações de peso, altura e idade abaixo para podermos determinar qual a melhor rotina alimentar para você =)</string>
+    <string name="btn_voltar">Voltar</string>
+    <string name="btn_send_email">Enviar E-mail</string>
+    <string name="loren_ipson_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at molestie mi, id dapibus odio. Curabitur mollis, est at eleifend euismod, odio nibh tempor eros, in posuere ipsum urna sit amet risus. Nunc condimentum arcu nibh, eget eleifend turpis placerat non. Praesent ac ex justo. Proin at porta nisl. Etiam vel risus velit. Phasellus quis faucibus arcu, a feugiat augue.
+
+</string>
+</resources>

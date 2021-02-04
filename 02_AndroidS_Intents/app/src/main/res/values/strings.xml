@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exer_02_Intents</string>
+    <string name="instructions">Resolva o seguinte problema matemático e responsa na caixa de texto abaixo.</string>
+    <string name="btn_check">Validar</string>
+    <string name="btn_clean">Limpar</string>
+    <string name="error_message">Ops... Resposta errada, tente novamente!</string>
+    <string name="success_message">Parabéns, você acertou!</string>
+</resources>

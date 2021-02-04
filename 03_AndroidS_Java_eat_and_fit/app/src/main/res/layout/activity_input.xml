@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_medidas"
+        android:alpha="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ImageView>
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info"
+        android:textSize="25sp"
+        android:fontFamily="@font/bodonimoda"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/lbl_info"
+        android:paddingBottom="200dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/lbl_weight"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/lbl_info"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="viewEnd"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:text="@string/weight"
+        app:layout_constraintEnd_toStartOf="@id/txt_weight">
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:tooltipText="Peso em Kilogramas"
+        app:layout_constraintTop_toBottomOf="@id/lbl_info"
+        android:id="@+id/txt_weight"
+        app:layout_constraintStart_toEndOf="@id/lbl_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="number|numberDecimal"
+        android:layout_marginRight="20dp">
+    </EditText>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/lbl_height"
+        android:textSize="20sp"
+        android:paddingRight="10dp"
+        android:textAlignment="viewEnd"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txt_height"
+        android:text="@string/height">
+    </TextView>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:tooltipText="Peso em Kilogramas"
+        android:id="@+id/txt_height"
+        app:layout_constraintStart_toEndOf="@id/lbl_height"
+        app:layout_constraintTop_toBottomOf="@id/txt_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="number|numberDecimal"
+        android:layout_marginRight="20dp">
+    </EditText>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/lbl_age"
+        android:textSize="20sp"
+        android:paddingRight="10dp"
+        android:textAlignment="viewEnd"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_height"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/idade"
+        app:layout_constraintEnd_toStartOf="@id/txt_age">
+    </TextView>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:tooltipText="Peso em Kilogramas"
+        android:id="@+id/txt_age"
+        app:layout_constraintStart_toEndOf="@id/lbl_age"
+        app:layout_constraintTop_toBottomOf="@id/txt_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="number"
+        android:layout_marginRight="20dp">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_results"
+        android:id="@+id/btn_calculator"
+        android:text="@string/btn_calculator"
+        android:layout_marginBottom="30dp"
+        ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_results"
+        app:layout_constraintStart_toEndOf="@id/btn_calculator"
+        android:text="@string/btn_results"
+        android:layout_marginBottom="30dp"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
